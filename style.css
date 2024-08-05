@@ -1,0 +1,75 @@
+body {
+    margin-right: 10px;
+}
+
+.wrapper {
+
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgb(210, 209, 209);
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: rgb(135, 126, 126);
+    border-radius: 5px;
+    color: white;
+    /* text-transform: uppercase; */
+    width: 210px;
+    padding: 20px;
+    margin: 0;
+}
+.big-button{
+text-transform: uppercase;
+
+}
+
+.wrapper-1 {
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+
+.wrapper-1 button:nth-child(1) {
+    justify-self: start;
+}
+
+.wrapper-2 {
+    grid-template-columns:4fr 1fr 1fr 1fr;
+    justify-items:end
+
+}
+.wrapper-2 button:first-child{
+    justify-self: start;
+
+}
+
+.wrapper-3 {
+    grid-template-columns: 210px 1fr 1fr 210px ;
+    
+}
+.wrapper-3 button:nth-last-child(2){
+    justify-self: end;
+    gap: 10px;
+}
+
+.wrapper-4 {
+    grid-template-columns:1fr 210px;
+    grid-template-rows: 1fr fr;
+
+}
+.wrapper-4 button:first-of-type{
+    grid-row: span 2;
+    justify-self: end;
+}
+.wrapper-5 {
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.wrapper-5 button:nth-child(1){
+    grid-row: span 2;
+    justify-self: end;
+}
